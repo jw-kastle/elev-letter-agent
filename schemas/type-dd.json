@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Kastle Elevator Specification Letter — Type DD (Destination Dispatch)",
+  "description": "Submit this JSON payload to the Kastle Elevator Letter Agent to generate a Type DD Destination Dispatch specification letter.",
+
+  "letter_type": "DD",
+  "date": "",
+
+  "recipient": {
+    "name": "",
+    "title": "",
+    "company": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "state": "",
+      "zip": ""
+    }
+  },
+
+  "property": {
+    "name": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "state": "",
+      "zip": ""
+    }
+  },
+
+  "kastle_rep": {
+    "name": "",
+    "title": "",
+    "email": "",
+    "phone": ""
+  },
+
+  "elevator_bank": "",
+  "access_hours": "",
+  "kec_location": "",
+  "dispatch_system_manufacturer": "",
+  "dispatch_system_model": "",
+  "integration_method": "",
+
+  "cars": [
+    {
+      "id": "",
+      "wire_pair": "",
+      "notes": ""
+    }
+  ],
+
+  "dispatch_zones": [
+    {
+      "zone_label": "",
+      "floors_served": [""],
+      "access_level": "",
+      "notes": ""
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Kastle Elevator Letter — Shared Field Definitions",
+  "description": "Common fields used across all elevator letter types. Each type-specific schema extends these.",
+
+  "definitions": {
+
+    "address": {
+      "type": "object",
+      "required": ["street", "city", "state", "zip"],
+      "properties": {
+        "street": { "type": "string", "value": "" },
+        "city":   { "type": "string", "value": "" },
+        "state":  { "type": "string", "value": "" },
+        "zip":    { "type": "string", "value": "" }
+      }
+    },
+
+    "recipient": {
+      "type": "object",
+      "required": ["name", "company", "address"],
+      "properties": {
+        "name":    { "type": "string", "value": "" },
+        "title":   { "type": "string", "value": "", "optional": true },
+        "company": { "type": "string", "value": "" },
+        "address": { "$ref": "#/definitions/address" }
+      }
+    },
+
+    "property": {
+      "type": "object",
+      "required": ["name", "address"],
+      "properties": {
+        "name":    { "type": "string", "value": "" },
+        "address": { "$ref": "#/definitions/address" }
+      }
+    },
+
+    "kastle_rep": {
+      "type": "object",
+      "required": ["name", "title", "email", "phone"],
+      "properties": {
+        "name":  { "type": "string", "value": "" },
+        "title": { "type": "string", "value": "" },
+        "email": { "type": "string", "format": "email", "value": "" },
+        "phone": { "type": "string", "value": "" }
+      }
+    },
+
+    "car_base": {
+      "type": "object",
+      "description": "Minimum car definition shared by all letter types.",
+      "required": ["id"],
+      "properties": {
+        "id":        { "type": "string", "value": "" },
+        "wire_pair": { "type": "string", "value": "", "optional": true },
+        "notes":     { "type": "string", "value": "", "optional": true }
+      }
+    }
+  }
+}

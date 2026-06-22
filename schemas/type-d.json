@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Kastle Elevator Specification Letter — Type D (Standard Panel Unlock)",
+  "description": "Submit this JSON payload to the Kastle Elevator Letter Agent to generate a Type D Standard Panel Unlock specification letter.",
+
+  "letter_type": "D",
+  "date": "",
+
+  "recipient": {
+    "name": "",
+    "title": "",
+    "company": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "state": "",
+      "zip": ""
+    }
+  },
+
+  "property": {
+    "name": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "state": "",
+      "zip": ""
+    }
+  },
+
+  "kastle_rep": {
+    "name": "",
+    "title": "",
+    "email": "",
+    "phone": ""
+  },
+
+  "elevator_bank": "",
+  "access_hours": "",
+  "kec_location": "",
+
+  "cars": [
+    {
+      "id": "",
+      "wire_pair": "",
+      "notes": ""
+    }
+  ]
+}

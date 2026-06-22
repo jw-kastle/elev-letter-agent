@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Kastle Elevator Specification Letter — Type A (Hall Call)",
+  "description": "Submit this JSON payload to the Kastle Elevator Letter Agent to generate a Type A Hall Call specification letter.",
+
+  "letter_type": "A",
+  "date": "",
+
+  "recipient": {
+    "name": "",
+    "title": "",
+    "company": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "state": "",
+      "zip": ""
+    }
+  },
+
+  "property": {
+    "name": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "state": "",
+      "zip": ""
+    }
+  },
+
+  "kastle_rep": {
+    "name": "",
+    "title": "",
+    "email": "",
+    "phone": ""
+  },
+
+  "elevator_bank": "",
+  "access_hours": "",
+  "kec_location": "",
+
+  "cars": [
+    {
+      "id": "",
+      "reader_location": "",
+      "wire_pair": "",
+      "hall_call_bypass_terminal": "",
+      "notes": ""
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Kastle Elevator Specification Letter — Type C (Floor Control)",
+  "description": "Submit this JSON payload to the Kastle Elevator Letter Agent to generate a Type C Floor Control specification letter.",
+
+  "letter_type": "C",
+  "date": "",
+
+  "recipient": {
+    "name": "",
+    "title": "",
+    "company": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "state": "",
+      "zip": ""
+    }
+  },
+
+  "property": {
+    "name": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "state": "",
+      "zip": ""
+    }
+  },
+
+  "kastle_rep": {
+    "name": "",
+    "title": "",
+    "email": "",
+    "phone": ""
+  },
+
+  "elevator_bank": "",
+  "access_hours": "",
+  "kec_location": "",
+
+  "cars": [
+    {
+      "id": "",
+      "wire_pair": "",
+      "notes": "",
+      "secured_floors": [
+        {
+          "floor_label": "",
+          "relay_pair": ""
+        }
+      ]
+    }
+  ]
+}
